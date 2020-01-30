@@ -12,7 +12,7 @@ dockerpath="ulat/ml_microservice"
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login &&\
-    docker image tag mlapi $dockerpath
+    docker image tag ml_microservice $dockerpath
 
 # Step 3:
 # Push image to a docker repository
