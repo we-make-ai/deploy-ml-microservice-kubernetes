@@ -24,6 +24,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            apt-get install python-astroid
             python3 -m venv venv
             . venv/bin/activate
             make install
@@ -39,10 +40,7 @@ jobs:
       - run:
           name: run lint
           command: |
-            python3 -m venv venv
             . venv/bin/activate 
-            apt-get install python-astroid
-            pip install  --upgrade astroid
             # make lint
             hadolint Dockerfile
             pylint --disable=R,C,W1203 app.py
