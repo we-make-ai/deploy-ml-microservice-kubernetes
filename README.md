@@ -1,4 +1,7 @@
-# CircleCI status badge
+# How To deploy a machine learning Microservice
+Project showcases how to deploy a given machine learning modell to docker and kubernetes. Including circleci continuous integration service.
+
+## CircleCI status badge
 
 [![CircleCI](https://circleci.com/gh/we-make-ai/deploy-ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/we-make-ai/deploy-ml-microservice-kubernetes)
 
